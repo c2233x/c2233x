@@ -3,7 +3,7 @@ d1 = "c"
 d2 = "DiftClash"
 d3 = "a"
 d4 = "b"
-d5 = "c"
+d5 = "cy"
 
 ll = ".lua"
 scripts = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents/"..d1..ll..""

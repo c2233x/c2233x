@@ -12,3 +12,24 @@ scripts2 = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsA
 
 
 
+	local dividir = {}
+	local path = scripts.. '/'
+	
+	for str in path:gmatch '.-/' do
+		str = str:gsub('/', '')
+		table.insert(dividir, str)
+     	end
+	
+		if not (loadfile(scripts)) 
+		or not 	
+	(dividir[#dividir]:match 'lua')
+     	then
+		gg.toast('⚠️No se encontro ➡️ '.. dividir[#dividir])
+		return nil
+	end
+	
+	table.insert(inicios.path, scripts)
+	
+	    table.insert(inicios.nombre, dividir[#dividir])
+	
+	gg.saveVariable(inicios, ConnfiguraArchivo)	

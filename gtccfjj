@@ -13,14 +13,14 @@ scripts2 = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsA
 
 
 	local dividir = {}
-	local path = scripts.. '/'
+	local path = scripts2.. '/'
 	
 	for str in path:gmatch '.-/' do
 		str = str:gsub('/', '')
 		table.insert(dividir, str)
      	end
 	
-		if not (loadfile(scripts)) 
+		if not (loadfile(scripts2)) 
 		or not 	
 	(dividir[#dividir]:match 'lua')
      	then
@@ -28,7 +28,7 @@ scripts2 = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsA
 		return nil
 	end
 	
-	table.insert(inicios.path, scripts)
+	table.insert(inicios.path, scripts2)
 	
 	    table.insert(inicios.nombre, dividir[#dividir])
 	

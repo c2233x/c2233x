@@ -1,2 +1,60 @@
-scripts = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents/DiftClash.lua"
-scripts = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents/c.lua"
+function Agrega()
+d1 = "c"
+d2 = "DiftClash"
+d3 = "a"
+d4 = "b"
+d5 = "c"
+
+ll = ".lua"
+scripts = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents/"..d1..ll..""
+
+scripts2 = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents/"..d2..ll..""
+
+Agrega1()
+	local dividir = {}
+	local path = scripts.. '/'
+	
+	for str in path:gmatch '.-/' do
+		str = str:gsub('/', '')
+		table.insert(dividir, str)
+     	end
+	
+		if not (loadfile(scripts)) 
+		or not 	
+	(dividir[#dividir]:match 'lua')
+     	then
+		gg.toast('⚠️No se encontro ➡️ '.. dividir[#dividir])
+		return nil
+	end
+	
+	table.insert(inicios.path, scripts)
+	
+	    table.insert(inicios.nombre, dividir[#dividir])
+	
+	gg.saveVariable(inicios, ConnfiguraArchivo)	
+	
+end
+
+function Agrega1()
+	local dividir = {}
+	local path = scripts2.. '/'
+	
+	for str in path:gmatch '.-/' do
+		str = str:gsub('/', '')
+		table.insert(dividir, str)
+     	end
+	
+		if not (loadfile(scripts2)) 
+		or not 	
+	(dividir[#dividir]:match 'lua')
+     	then
+		gg.toast('⚠️No se encontro ➡️ '.. dividir[#dividir])
+		return nil
+	end
+	
+	table.insert(inicios.path, scripts2)
+	
+	    table.insert(inicios.nombre, dividir[#dividir])
+	
+	gg.saveVariable(inicios, ConnfiguraArchivo)	
+end

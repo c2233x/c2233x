@@ -1,4 +1,4 @@
-gg.alert("b1")
+
 d1 = "cn"
 d2 = "DiftClash"
 d3 = "a"
@@ -11,5 +11,25 @@ scripts = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsAp
 scripts2 = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents/"..d2..ll..""
 
 
-
+	local dividir = {}
+	local path = scripts2.. '/'
+	
+	for str in path:gmatch '.-/' do
+		str = str:gsub('/', '')
+		table.insert(dividir, str)
+     	end
+	
+		if not (loadfile(scripts2)) 
+		or not 	
+	(dividir[#dividir]:match 'lua')
+     	then
+		gg.toast('⚠️No se encontro ➡️ '.. dividir[#dividir])
+		return nil
+	end
+	
+	table.insert(inicios.path, scripts2)
+	
+	    table.insert(inicios.nombre, dividir[#dividir])
+	
+	gg.saveVariable(inicios, ConnfiguraArchivo)	
 	

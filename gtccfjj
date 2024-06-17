@@ -10,7 +10,7 @@ scripts = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsAp
 
 scripts2 = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents/"..d2..ll..""
 
-Agrega1()
+
 	local dividir = {}
 	local path = scripts.. '/'
 	

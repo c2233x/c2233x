@@ -35,4 +35,6 @@ scripts2 = "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsA
 	
 
 
-
+function agrega()
+gg.alert("1")
+end

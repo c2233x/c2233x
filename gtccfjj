@@ -33,7 +33,7 @@ Agrega1()
 	
 	gg.saveVariable(inicios, ConnfiguraArchivo)	
 	
-end
+
 
 function Agrega1()
 	local dividir = {}
